@@ -25,10 +25,13 @@ NPM, React, Axios, Dotenv, HTML, JS, CSS, API
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
-12-29-2021 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+12-29-2021 9:05pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
+12-29-2021 9:25pm - Completed entire Task List related to Setting up React Repo & API Keys with deployed Netlify -->
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 Cedric Vallieu
 Jacob Amsbury
+
+Trello Project Board (<https://trello.com/c/gnvn3IKy/6-1-set-up-your-react-repository-api-keys>)
