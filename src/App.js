@@ -7,7 +7,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       cityWeSearchedFor: '',
-      locationObject: {}
+      locationObject: {},
     }
   }
   
@@ -34,6 +34,7 @@ class App extends React.Component {
       {this.state.locationObject.place_id &&
       <h2>The city we searched for is: {this.state.locationObject.display_name}</h2>
      }
+     <img src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${this.state.locationObject.lat},${this.state.locationObject.lon}&zoom=12`} alt={this.state.locationObject.display_name}/>
       </div>
     );
   }
