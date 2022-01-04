@@ -39,9 +39,9 @@ class App extends React.Component {
     
       <Container>
       <div className='App'>
-      <input id='form' onChange={this.saveCitySearchedFor} placeholder='search for a city'>
+      <input id='form' className='form' onChange={this.saveCitySearchedFor} placeholder='search for a city'>
       </input>
-      <button onClick={this.getLocation}>Explore!</button>
+      <button id='button' onClick={this.getLocation}>Explore!</button>
       
       {this.state.locationObject.place_id &&
       <h2>The city we searched for is: {this.state.locationObject.display_name}</h2>
