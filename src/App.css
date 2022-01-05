@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.container {
+  background-color: darkblue;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -69,5 +73,9 @@ img::after {
 } */
 
 h2, h3, p {
+  color: beige;
+}
+
+#alert {
   color: beige;
 }
