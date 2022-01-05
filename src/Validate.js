@@ -7,7 +7,7 @@ class Validate extends React.Component {
   
   render () {
     return (
-       <Alert id='alert'> 
+       <Alert variant='danger'> 
         <Alert.Heading>Unable to Geocode</Alert.Heading>
         </Alert>
     );
