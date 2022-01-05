@@ -71,3 +71,7 @@ img::after {
 h2, h3, p {
   color: beige;
 }
+
+#alert {
+  color: beige;
+}
