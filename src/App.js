@@ -52,7 +52,10 @@ class App extends React.Component {
           <button onClick={this.getWeather}>Get weather</button>
           <ul>
             {this.state.weather.map((item, idx) => (
-              <li key={idx}>{item}</li>
+              <div  key={idx}>
+              <li>{item.date}</li>
+              <li>{item.desc}</li>
+              </div>
             ))}
           </ul>
           {this.state.locationObject.place_id &&
