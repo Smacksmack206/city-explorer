@@ -12,7 +12,8 @@ class App extends React.Component {
       cityWeSearchedFor: '',
       locationObject: {},
       display_Error: false,
-      weather: []
+      weather: [],
+      errors: ''
     }
   }
 
@@ -30,7 +31,10 @@ class App extends React.Component {
       console.log('response object', response.data[0]);
       this.setState({ locationObject: response.data[0] });
     } catch (error) {
-      this.setState({ display_Error: true })
+      this.setState({ display_Error: true,
+      errors: error.response.status + ': ' + error.response.data.error 
+      });
+  
     }
   }
 
@@ -59,14 +63,17 @@ class App extends React.Component {
             ))}
           </ul>
           {this.state.locationObject.place_id &&
+            <div>
             <h2>The city we searched for is: {this.state.locationObject.display_name}</h2>
+            <img src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${this.state.locationObject.lat},${this.state.locationObject.lon}&zoom=12`} alt={this.state.locationObject.display_name} />
+            </div>
           }
           <h3>{this.state.locationObject.lat &&
             this.state.locationObject.lat + ', ' + this.state.locationObject.lon}</h3>
           <p id='err'></p>
           {this.state.display_Error &&
-            <Validate />}
-          <img src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${this.state.locationObject.lat},${this.state.locationObject.lon}&zoom=12`} alt={this.state.locationObject.display_name} />
+            <Validate errors={this.state.errors}/>}
+          
         </div>
       </Container>
 

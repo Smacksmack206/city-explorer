@@ -4,12 +4,12 @@ import Alert from 'react-bootstrap/Alert';
 
 class Validate extends React.Component {
   
-  
-  render () {
+
+  render() {
     return (
-       <Alert variant='danger'> 
-        <Alert.Heading>Unable to Geocode</Alert.Heading>
-        </Alert>
+      <Alert variant='danger'>
+        <Alert.Heading>{this.props.errors}</Alert.Heading>
+      </Alert>
     );
   }
 }
