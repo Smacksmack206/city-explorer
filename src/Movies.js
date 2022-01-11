@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card } from 'react-bootstrap';
 
 class Movies extends React.Component {
     render() {
@@ -6,8 +7,10 @@ class Movies extends React.Component {
         return (
             this.props.movies.map((movies, idx) => (
                 <div key={idx}>
+                    <Card className="bg-dark text-white">
                     <p>Title: {movies.title}</p>
                     <p>overview: {movies.overview}</p>
+                    </Card>
                 </div>
             ))
         )
