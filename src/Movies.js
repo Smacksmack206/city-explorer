@@ -10,6 +10,7 @@ class Movies extends React.Component {
                     <Card className="bg-dark text-white">
                     <p>Title: {movies.title}</p>
                     <p>overview: {movies.overview}</p>
+                    <img src={`https://image.tmdb.org/t/p/original/${this.props.movies.img}`}  alt={'...'} />
                     </Card>
                 </div>
             ))
