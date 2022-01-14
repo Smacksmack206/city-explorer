@@ -29,3 +29,13 @@ Start time: 8:00
 Finish time: 9:45
 
 Actual time needed to complete: 125 min
+
+## Number and name of feature: Refactoring
+
+Estimate of time needed to complete: 30 min
+
+Start time: 7:30
+
+Finish time: 9:15
+
+Actual time needed to complete: 105 min

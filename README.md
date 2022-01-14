@@ -29,7 +29,9 @@ NPM, React, Axios, Dotenv, HTML, JS, CSS, API
 
 12-29-2021 9:25pm - Completed entire Task List related to Setting up React Repo & API Keys with deployed Netlify -->
 
-1-10-2022 9:45pm - Netlify and Heroku deployments -->
+1-10-2022 9:45pm - Netlify and Heroku deployments --> 
+
+1-13-2022 9:20pm Refactoring and nested components -->
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
